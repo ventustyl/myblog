@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f1f1f1;
+  font-family: montserrat, 'sans-serif';
+  font-weight: ligth;
+}
+
+/* Classe utilitaire taillwind */
+
+
+.u-main-container {
+ @apply max-w-6xl mx-auto px-12
+}
+
+.u-padding-content-container {
+  @apply pt-12 pb-44
+}
+
+.u-articles-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-4 mb-12 list-none
+}
+
+.t-main-title {
+  @apply font-monstserrat text-black md:text-6xl mb-4 font-light text-2xl
+}
+
+.t-main-subtitle {
+  @apply font-monstserrat text-black text-4xl mb-4 font-light
+}
+
+f.label {
+  @apply block mb-2 
+}

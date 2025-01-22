@@ -1,0 +1,37 @@
+{
+  "name": "axoria-blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dompurify": "^3.2.3",
+    "dotenv": "^16.4.7",
+    "firebase": "^11.2.0",
+    "jsdom": "^26.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "marked": "^15.0.6",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.5",
+    "next": "^15.1.5",
+    "prism-themes": "^1.9.0",
+    "prismjs": "^1.29.0",
+    "react": "^19",
+    "react-dom": "^19",
+    "react-image-file-resizer": "^0.4.8",
+    "sanitize-html": "^2.14.0",
+    "sharp": "^0.33.5",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "eslint": "^9",
+    "eslint-config-next": "^15.1.5",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.17"
+  }
+}
