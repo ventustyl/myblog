@@ -1,19 +1,33 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+body {  
+  background: white;
+  font-family: montserrat
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* classe utilitaire */
+
+.u-main-container {
+  @apply max-w-6xl mx-4 px-2 sm:w-full sm:max-w-full sm:px-22 sm:mx-auto;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.u-padding-content-container {
+  @apply py-24 pb-44;
+}
+
+.u-article-grid{
+  @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-8 mt-4 mb-12 list-none;
+}
+
+.t-main-title{
+@apply text-5xl mb-2;
+}
+
+.t-main-subtitle {
+  @apply text-lg mb-2;
+}
+
+.f-label {
+  @apply block mb-2 py-2;
 }
