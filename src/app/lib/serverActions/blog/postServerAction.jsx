@@ -1,6 +1,6 @@
 "use server"
-import { connectToDB } from "../../connectToDB"
-import { Post } from "@/app/lib/models/post"
+import { connectToDB } from "../../utils/db/connectToDB"
+import { Post } from "../../models/post"
 
 export async function addPost(formData) {
     const {title, article} = Object.fromEntries(formData)

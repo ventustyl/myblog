@@ -1,25 +1,28 @@
 import Link from "next/link";
 import React from "react";
 import { connectToDB } from "./lib/utils/db/connectToDB";
-
-const posts = [
-  {
-    author: "Eric Venturino",
-    title: "CSS Grid",
-  },
-  {
-    author: "Eric Venturino",
-    title: "CSS Flex",
-  },
-  {
-    author: "Eric Venturino",
-    title: "CSS Float",
-  },
-];
+import { getPosts } from "./lib/serverMethods/blog/postMethods";
+// const posts = [
+//   {
+//     author: "Eric Venturino",
+//     title: "CSS Grid",
+//   },
+//   {
+//     author: "Eric Venturino",
+//     title: "CSS Flex",
+//   },
+//   {
+//     author: "Eric Venturino",
+//     title: "CSS Float",
+//   },
+// ];
 
 export default async function page() {
 
   await connectToDB()
+
+  const posts = await getPosts()
+
 
   return (
     <div className="u-main-container u-padding-content-container">

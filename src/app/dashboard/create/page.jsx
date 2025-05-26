@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import { addPost } from "@/app/lib/utils/db/serverActions/blog/postServerAction";
+import { addPost } from "@/app/lib/serverActions/blog/postServerAction";
 
 export default function page() {
 
